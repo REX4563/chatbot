@@ -34,7 +34,7 @@ const getChatResponse = async (incomingChatDiv) => {
     const pElement = document.createElement("p");
 
     // Python code replaces the API request
-    const response = await fetch('http://192.168.56.1:5000/conversation/', {
+    const response = await fetch('http://192.168.1.13:5000/conversation/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
