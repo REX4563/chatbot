@@ -10,7 +10,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
 
-with open("D:\clg proj\Chatbot_Keras-main\intents.json") as file:
+with open("intents.json") as file:
     data = json.load(file)
 
 def get_date():
@@ -44,10 +44,10 @@ def process_chat():
         user_text = data['userText']
 
         # Load your model, tokenizer, and label encoder here
-        model = keras.models.load_model('D:\clg proj\Chatbot_Keras-main\chat_model')
-        with open('D:\clg proj\Chatbot_Keras-main/tokenizer.pickle', 'rb') as handle:
+        model = keras.models.load_model('chat_model')
+        with open('tokenizer.pickle', 'rb') as handle:
             tokenizer = pickle.load(handle)
-        with open('D:\clg proj\Chatbot_Keras-main/label_encoder.pickle', 'rb') as enc:
+        with open('label_encoder.pickle', 'rb') as enc:
             lbl_encoder = pickle.load(enc)
 
         # Process user text and get a response
