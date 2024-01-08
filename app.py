@@ -63,4 +63,4 @@ def process_chat():
         return jsonify({'error': str(e)})
 
 if __name__ == '__main__':
-    app.run(debug=True, host='192.168.56.1')
+    app.run(debug=True)
