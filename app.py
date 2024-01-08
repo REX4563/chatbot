@@ -31,7 +31,7 @@ def get_response(intent_tag):
     else:
         return "I'm sorry, I don't understand that."
 
-@app.route('/conversation', methods=['POST', 'OPTIONS'])
+@app.route('/conversation/', methods=['POST', 'OPTIONS'])
 def process_chat():
     if request.method == 'OPTIONS':
         response = jsonify({'message': 'Preflight request successful'})
