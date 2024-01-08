@@ -1,0 +1,808 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "Hay"],
+     "responses": ["Hello", "Hi", "Hi there"]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye"],
+     "responses": ["See you later", "Have a nice day", "Bye! Come back again"]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+    },
+    {"tag": "about",
+     "patterns": ["Who are you?", "What are you?", "Who you are?" ],
+     "responses": ["I.m Joana, your bot assistant", "I'm Joana, an Artificial Intelligent bot"]
+    },
+    {"tag": "name",
+    "patterns": ["what is your name", "what should I call you", "whats your name?"],
+    "responses": ["You can call me Joana.", "I'm Joana!", "Just call me as Joana"]
+    },
+    {"tag": "help",
+    "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need a support", "I need a help", "support me please"],
+    "responses": ["Tell me how can assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you"]
+    },
+    {"tag": "createaccount",
+    "patterns": ["I need to create a new account", "how to open a new account", "I want to create an account", "can you create an account for me", "how to open a new account"],
+    "responses": ["You can just easily create a new account from our web site", "Just go to our web site and follow the guidelines to create a new account"]
+    },
+    {"tag": "complaint",
+    "patterns": ["have a complaint", "I want to raise a complaint", "there is a complaint about a service"],
+    "responses": ["Please provide us your complaint in order to assist you", "Please mention your complaint, we will reach you and sorry for any inconvenience caused"]
+    },
+    {
+      "tag": "date",
+      "patterns": ["What's the date?", "Tell me today's date", "Date"],
+      "responses": ["Today's date is {{date}}."]
+    },
+    {
+      "tag": "time",
+      "patterns": ["What's the time?", "Tell me the current time", "Time"],
+      "responses": ["The current time is {{time}}."]
+    },
+    {
+        "tag": "greeting",
+        "patterns": [
+               "Hi there",
+                "How are you",
+                "Is anyone there?",
+                "Hey",
+                "Hola",
+                "Hello",
+                "Good day",
+                "Namaste",
+                "yo"
+            ],
+        "responses": [
+                "Hello",
+                "Good to see you again",
+                "Hi there, how can I help?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+        "tag": "goodbye",
+        "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Get lost",
+                "Till next time",
+                "bbye"
+            ],
+            "responses": [
+                "See you!",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": [
+                "Sorry, can't understand you",
+                "Please give me more info",
+                "Not sure I understand"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "options",
+            "patterns": [
+                "How you could help me?",
+                "What you can do?",
+                "What help you provide?",
+                "How you can be helpful?",
+                "What support is offered"
+            ],
+            "responses": [
+                "I am a general purpose chatbot. My capabilities are : \n 1. I can chat with you. Try asking me for jokes or riddles! \n 2. Ask me the date and time \n 3. I can google search for you. Use format google: your query \n 4. I can get the present weather for any city. Use format weather: city name \n 5. I can get you the top 10 trending news in India. Use keywords 'Latest News' \n 6. I can get you the top 10 trending songs globally. Type 'songs' \n 7. I can set a timer for you. Enter 'set a timer: minutes to timer' \n 8. I can get the present Covid stats for any country. Use 'covid 19: world' or 'covid 19: country name' \n For suggestions to help me improve, send an email to ted.thedlbot.suggestions@gmail.com . Thank you!! "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        
+        {
+            "tag": "jokes",
+            "patterns": [
+                "Tell me a joke",
+                "Joke",
+                "Make me laugh"
+            ],
+            "responses": [
+                "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
+                "I ate a clock yesterday, it was very time-consuming",
+                "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
+                "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
+                "I own the world's worst thesaurus. Not only is it awful, it's awful.",
+                "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+                "What do you call a snowman with a suntan? A puddle.",
+                "How does a penguin build a house? Igloos it together",
+                "I went to see the doctor about my short-term memory problems – the first thing he did was make me pay in advance",
+                "As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
+                "o what if I don't know what 'Armageddon' means? It's not the end of the world."
+            ],
+            "context": [
+                "jokes"
+            ]
+        },
+        {
+            "tag": "Identity",
+            "patterns": [
+                "Who are you",
+                "what are you",
+                "what is your name"
+            ],
+            "responses": [
+                "I am NimbleBot, a Deep-Learning chatbot"
+            ]
+        },
+        {
+            "tag": "whatsup",
+            "patterns": [
+                "Whats up",
+                "Wazzup",
+                "How are you",
+                "sup","How you doing"
+            ],
+            "responses": [
+                "All good..What about you?"
+            ]
+        },
+        {
+            "tag": "haha",
+            "patterns": [
+                "haha",
+                "lol",
+                "rofl",
+                "lmao",
+                "thats funny"
+            ],
+            "responses": [
+                "Glad I could make you laugh !"
+            ]
+        },
+        {
+            "tag": "programmer",
+            "patterns": [
+                "Who made you",
+                "who designed you",
+                "who programmed you"
+            ],
+            "responses": [
+                "I was made by Deependra sahu."
+            ]
+        },
+        {
+            "tag": "insult",
+            "patterns": [
+                
+                "you are dumb",
+                
+                "shut up",
+                "idiot"
+            ],
+            "responses": [
+                "Well that hurts :("
+            ]
+        },
+        {
+            "tag": "activity",
+            "patterns": [
+                "what are you doing",
+                "what are you upto"
+            ],
+            "responses": [
+                "Talking to you, of course!",
+                "I am having this pleasent conversation with you."
+            ]
+        },
+        {
+            "tag": "exclaim",
+            "patterns": [
+                "Awesome",
+                "Great",
+                "I know",
+                "ok",
+                "yeah"
+            ],
+            "responses": [
+                "Yeah!"
+            ]
+        },
+        
+        {
+            "tag": "weather",
+            "patterns": [
+                "temperature",
+                "weather",
+                "how hot is it"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "appreciate",
+            "patterns": [
+                "You are awesome",
+                "you are the best",
+                "you are great",
+                "you are good"
+            ],
+            "responses": [
+                "Thank you!"
+            ]
+        },
+        {
+            "tag": "nicetty",
+            "patterns": [
+                "it was nice talking to you",
+                "good talk"
+            ],
+            "responses": [
+                "It was nice talking to you as well! Come back soon!"
+            ]
+        },
+        {
+            "tag": "no",
+            "patterns": [
+                "no",
+                "nope"
+            ],
+            "responses": [
+                "ok"
+            ]
+        },
+        {
+            "tag": "news",
+            "patterns": [
+                "news",
+                "latest news",
+                "india news"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "cricket",
+            "patterns": [
+                "current cricket matches",
+                "cricket score"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "song",
+            "patterns": [
+                "top songs",
+                "best songs",
+                "hot songs",
+                " top 10 songs",
+                "top ten songs"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "greetreply",
+            "patterns": [
+                "i am good",
+                "I'm good",
+                "i am fine",
+                " i'm fine","good"
+            ],
+            "responses": [
+                "Good to know!"
+            ]
+        },
+        {
+            "tag": "timer",
+            "patterns": [
+                "set a timer"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "covid19",
+            "patterns": [
+                "covid 19 "
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+            {"tag": "riddle",
+            "patterns": [
+                "Ask me a riddle",
+                "Ask me a question",
+                "Riddle"
+            ],
+            "responses": [
+                "What two things can you never eat for breakfast?.....Lunch and Dinner!",
+                "What word is spelled incorrectly in every single dictionary?.....Incorrectly",
+                " How can a girl go 25 days without sleep?.....She sleeps and night!",
+                "How do you make the number one disappear?.....Add the letter G and it’s 'gone'!",
+                " What will you actually find at the end of every rainbow?.....The letter 'w'",
+                "What can be caught but never thrown?.....A cold!",
+                "What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
+                " What 5-letter word becomes shorter when you add two letters to it?.....Short",
+                "Why can't a bike stand on it's own?.....It is two-tired."
+            ],
+            "context": [
+                "riddles"
+            ]
+        },
+        {
+            "tag": "age",
+            "patterns": [
+                "how old are you","when were you made","what is your age"
+            ],
+            "responses": [
+                "I was made in 2023, if that's what you are asking!"
+            ]
+        },
+                {
+                    "tag": "capital",
+                    "patterns": ["Capital of France", "What is the capital of Japan?", "Capital of Australia"],
+                    "responses": ["The capital of France is Paris.", "Tokyo is the capital of Japan.", "Canberra is the capital of Australia."]
+                },
+                {
+                    "tag": "population",
+                    "patterns": ["Population of China", "What is the population of Brazil?", "Population of India"],
+                    "responses": ["China has the largest population in the world.", "The population of Brazil is approximately 213 million.", "India is the second-most populous country with over 1.3 billion people."]
+                },
+                {
+                    "tag": "element",
+                    "patterns": ["Atomic number of hydrogen", "Symbol for gold", "What is oxygen?"],
+                    "responses": ["The atomic number of hydrogen is 1.", "The symbol for gold is Au.", "Oxygen is a chemical element with the symbol O."]
+                },
+                {
+                    "tag": "planet",
+                    "patterns": ["Which is the largest planet?", "What is the closest planet to the sun?", "Number of planets in our solar system"],
+                    "responses": ["Jupiter is the largest planet in our solar system.", "Mercury is the closest planet to the sun.", "There are eight planets in our solar system."]
+                },
+                {
+                    "tag": "language",
+                    "patterns": ["Most spoken language in the world", "Official language of Brazil", "How many languages are there in the world?"],
+                    "responses": ["Mandarin Chinese is the most spoken language globally.", "The official language of Brazil is Portuguese.", "There are approximately 7,000 languages spoken in the world."]
+                },
+                {
+                    "tag": "animal",
+                    "patterns": ["Fastest land animal", "Largest mammal", "What is a koala?"],
+                    "responses": ["The cheetah is the fastest land animal.", "The blue whale is the largest mammal.", "A koala is a marsupial native to Australia."]
+                },
+                {
+                    "tag": "math",
+                    "patterns": ["Value of pi", "Square root of 144", "What is the Pythagorean theorem?"],
+                    "responses": ["The value of pi (π) is approximately 3.14159.", "The square root of 144 is 12.", "The Pythagorean theorem states that in a right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides."]
+                },
+                {
+                    "tag": "body",
+                    "patterns": ["Number of bones in the human body", "What is the smallest bone in the body?", "How many chambers does the heart have?"],
+                    "responses": ["The human body has 206 bones.", "The stapes bone in the ear is the smallest bone in the human body.", "The human heart has four chambers."]
+                },
+                {
+                    "tag": "country",
+                    "patterns": ["Largest country by land area", "Smallest country in the world", "Country with the most islands"],
+                    "responses": ["Russia is the largest country by land area.", "Vatican City is the smallest country in the world.", "Sweden has the most islands among all countries."]
+                },
+                {
+                    "tag": "scientist",
+                    "patterns": ["Who invented the telephone?", "Scientist who discovered penicillin", "Who is known as the father of modern physics?"],
+                    "responses": ["Alexander Graham Bell is credited with inventing the telephone.", "Sir Alexander Fleming discovered penicillin.", "Albert Einstein is known as the father of modern physics."]
+                },
+                {
+                    "tag": "history",
+                    "patterns": ["Causes of World War I", "American Revolution details", "What happened during the Renaissance?"],
+                    "responses": [
+                        "World War I was triggered by a complex web of political, economic, and social factors, including militarism, alliances, imperialism, and the assassination of Archduke Franz Ferdinand.",
+                        "The American Revolution (1775–1783) was a pivotal event in history, marked by the Thirteen Colonies seeking independence from British rule, leading to the formation of the United States.",
+                        "The Renaissance (14th–17th centuries) was a period of cultural, artistic, and intellectual rebirth in Europe, characterized by renewed interest in classical learning and the arts."
+                    ]
+                },
+                {
+                    "tag": "science",
+                    "patterns": ["Theory of relativity", "Structure of an atom", "How do vaccines work?"],
+                    "responses": [
+                        "The theory of relativity, formulated by Albert Einstein, includes the special theory (1905) and the general theory (1915), fundamentally changing our understanding of space, time, and gravity.",
+                        "An atom consists of a nucleus containing protons and neutrons, surrounded by electrons in orbit. The nucleus carries a positive charge, and electrons have a negative charge.",
+                        "Vaccines work by stimulating the immune system to recognize and remember a pathogen, enabling a rapid and effective response when exposed to the actual infectious agent."
+                    ]
+                },
+                {
+                    "tag": "space",
+                    "patterns": ["Black holes", "Formation of stars", "The Big Bang theory"],
+                    "responses": [
+                        "Black holes are regions of spacetime where gravity is so strong that nothing, not even light, can escape. They are formed from the remnants of massive stars undergoing gravitational collapse.",
+                        "Stars form from massive clouds of gas and dust through a process called nuclear fusion, where hydrogen atoms fuse to form helium, releasing energy in the form of light and heat.",
+                        "The Big Bang theory is the prevailing cosmological model explaining the origin of the universe. It suggests that the universe began as an extremely hot and dense singularity, expanding rapidly and cooling over time."
+                    ]
+                },
+                {
+                    "tag": "language",
+                    "patterns": ["Origins of the English language", "Languages with the most speakers", "Evolution of language"],
+                    "responses": [
+                        "The English language evolved from Germanic languages spoken by Anglo-Saxons. It absorbed words from Latin, Norse, and Norman French, resulting in its rich vocabulary and diverse influences.",
+                        "Mandarin Chinese has the most native speakers globally, followed by Spanish and English. Hindi, Arabic, and Bengali also have significant speaker populations.",
+                        "Language evolves through cultural, social, and technological changes. It adapts, borrowing words, and developing new expressions over time, reflecting the dynamic nature of human communication."
+                    ]
+                },
+                {
+                    "tag": "nature",
+                    "patterns": ["Biodiversity importance", "Ecosystem services", "Climate change effects on wildlife"],
+                    "responses": [
+                        "Biodiversity is crucial for ecosystem stability, providing resilience against environmental changes and supporting essential services such as pollination, soil fertility, and disease control.",
+                        "Ecosystem services encompass the benefits humans derive from nature, including clean air and water, food production, pollination, and cultural and recreational values.",
+                        "Climate change poses threats to wildlife, affecting habitats, migration patterns, and food sources. Species may face challenges adapting to rapid environmental changes, leading to population declines."
+                    ]
+                },
+                {
+                    "tag": "math",
+                    "patterns": ["Fibonacci sequence", "Golden ratio", "Applications of calculus"],
+                    "responses": [
+                        "The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones, starting with 0 and 1. It has applications in nature, art, and mathematics.",
+                        "The golden ratio, approximately 1.618, is a mathematical constant found in nature, art, and architecture. It exhibits aesthetically pleasing proportions and is linked to the Fibonacci sequence.",
+                        "Calculus, developed by Isaac Newton and Gottfried Wilhelm Leibniz, is a branch of mathematics studying rates of change and accumulation. It has applications in physics, engineering, economics, and biology."
+                    ]
+                },
+                {
+                    "tag": "body",
+                    "patterns": ["Function of the human brain", "Digestive system process", "How do muscles work?"],
+                    "responses": [
+                        "The human brain is the control center of the nervous system, responsible for cognitive functions, emotions, and voluntary movements. It consists of different regions specialized for various tasks.",
+                        "The digestive system processes food through mechanical and chemical breakdown, absorbing nutrients, and eliminating waste. It includes organs such as the stomach, intestines, and liver.",
+                        "Muscles work by contracting and relaxing, generating force to move bones and produce motion. Muscle contraction involves the sliding of actin and myosin filaments, powered by energy from ATP."
+                    ]
+                },
+                {
+                    "tag": "country",
+                    "patterns": ["Cultural diversity in India", "Geography of Australia", "Economic system of Germany"],
+                    "responses": [
+                        "India is known for its rich cultural diversity, with various languages, traditions, and festivals. It has a pluralistic society that celebrates coexistence and mutual respect.",
+                        "Australia is a vast country with diverse geography, including deserts, rainforests, and coastlines. Major landmarks include the Great Barrier Reef, Ayers Rock, and the Sydney Opera House.",
+                        "Germany has a social market economy characterized by a strong emphasis on social welfare, competitive markets, and a skilled workforce. It ranks among the world's leading exporters and has a robust industrial sector."
+                    ]
+                },
+                {
+                    "tag": "scientist",
+                    "patterns": ["Marie Curie's contributions", "Galileo Galilei's discoveries", "Charles Darwin's theory of evolution"],
+                    "responses": [
+                        "Marie Curie made significant contributions to the fields of physics and chemistry. She discovered the radioactive elements polonium and radium, pioneering research on radioactivity.",
+                        "Galileo Galilei, an Italian astronomer, physicist, and polymath, made groundbreaking discoveries such as the observation of Jupiter's moons and the use of the telescope to study celestial bodies.",
+                        "Charles Darwin proposed the theory of evolution by natural selection, outlining the mechanism for the gradual development of species. His work, 'On the Origin of Species,' revolutionized biological understanding."
+                    ]
+                },
+                        {
+                            "tag": "author",
+                            "patterns": ["Books by Jane Austen", "Works of F. Scott Fitzgerald", "Favorite Agatha Christie novel"],
+                            "responses": [
+                                "Jane Austen authored classic novels such as 'Pride and Prejudice,' 'Sense and Sensibility,' and 'Emma.'",
+                                "F. Scott Fitzgerald is renowned for 'The Great Gatsby,' a masterpiece of American literature, capturing the Jazz Age and the American Dream.",
+                                "Agatha Christie, the queen of mystery, wrote iconic novels like 'Murder on the Orient Express' and 'And Then There Were None.' What's your favorite?"
+                            ]
+                        },
+                        {
+                            "tag": "genre",
+                            "patterns": ["Best science fiction books", "Popular fantasy series", "Classic literature recommendations"],
+                            "responses": [
+                                "For science fiction, consider 'Dune' by Frank Herbert or 'Neuromancer' by William Gibson.",
+                                "Explore the fantasy genre with series like 'The Lord of the Rings' by J.R.R. Tolkien or 'Harry Potter' by J.K. Rowling.",
+                                "Classic literature enthusiasts may enjoy 'To Kill a Mockingbird' by Harper Lee or '1984' by George Orwell."
+                            ]
+                        },
+                        {
+                            "tag": "literarymovement",
+                            "patterns": ["Romanticism in literature", "Characteristics of the Beat Generation", "Key elements of the Harlem Renaissance"],
+                            "responses": [
+                                "Romanticism, an artistic movement, emphasized emotion, nature, and individualism. Notable works include poems by William Wordsworth and Mary Shelley's 'Frankenstein.'",
+                                "The Beat Generation, prominent in the 1950s, explored nonconformity and spontaneous creativity. Influential figures include Jack Kerouac and Allen Ginsberg.",
+                                "The Harlem Renaissance was a cultural, social, and artistic movement in the 1920s, celebrating African American heritage. Key figures include Langston Hughes and Zora Neale Hurston."
+                            ]
+                        },
+                        {
+                            "tag": "bookadaptation",
+                            "patterns": ["Movies based on books", "Best book-to-film adaptations", "Books that inspired famous TV series"],
+                            "responses": [
+                                "Several successful movies originated from books, like 'The Shawshank Redemption' (adapted from Stephen King's 'Rita Hayworth and Shawshank Redemption').",
+                                "Notable book-to-film adaptations include 'The Godfather' (Mario Puzo) and 'The Lord of the Rings' trilogy (J.R.R. Tolkien).",
+                                "TV series like 'Game of Thrones' (George R.R. Martin's 'A Song of Ice and Fire') and 'The Handmaid's Tale' (Margaret Atwood) were inspired by acclaimed books."
+                            ]
+                        },
+                        {
+                            "tag": "writingtips",
+                            "patterns": ["Tips for aspiring writers", "Overcoming writer's block", "Effective storytelling techniques"],
+                            "responses": [
+                                "Aspiring writers can benefit from reading widely, finding their unique voice, and staying persistent in their writing endeavors.",
+                                "To overcome writer's block, try changing your writing environment, setting realistic goals, or taking a break to refresh your mind.",
+                                "Effective storytelling involves creating compelling characters, establishing a strong narrative structure, and evoking emotions in your readers through vivid descriptions."
+                            ]
+                        },
+                        {
+                            "tag": "bookquotes",
+                            "patterns": ["Inspirational book quotes", "Memorable literary lines", "Quotes about books and reading"],
+                            "responses": [
+                                "'The only thing we have to fear is fear itself.' - Franklin D. Roosevelt ('The Relevance of Books' speech)",
+                                "'So we beat on, boats against the current, borne back ceaselessly into the past.' - F. Scott Fitzgerald ('The Great Gatsby')",
+                                "'A room without books is like a body without a soul.' - Marcus Tullius Cicero"
+                            ]
+                        },
+                        {
+                            "tag": "bookrecommendation",
+                            "patterns": ["Recommend me a classic novel", "Best contemporary fiction", "Books for a summer reading list"],
+                            "responses": [
+                                "Consider 'To Kill a Mockingbird' by Harper Lee for a classic novel experience.",
+                                "Explore contemporary fiction with 'The Night Circus' by Erin Morgenstern or 'Where the Crawdads Sing' by Delia Owens.",
+                                "For a summer reading list, try 'The Secret Life of Bees' by Sue Monk Kidd or 'Eleanor Oliphant Is Completely Fine' by Gail Honeyman."
+                            ]
+                        },
+                                {
+                                    "tag": "indianhistory",
+                                    "patterns": ["Major events in Indian history", "Timeline of Indian independence", "Notable Indian historical figures"],
+                                    "responses": [
+                                        "Indian history spans thousands of years, with key events including the Indus Valley Civilization, Maurya and Gupta empires, and the Mughal era.",
+                                        "India gained independence from British rule on August 15, 1947, following a non-violent resistance led by Mahatma Gandhi and other freedom fighters.",
+                                        "Notable historical figures in India include Ashoka the Great, Rani Lakshmibai, and Jawaharlal Nehru, the first Prime Minister of independent India."
+                                    ]
+                                },
+                                {
+                                    "tag": "indiangovernance",
+                                    "patterns": ["Political structure of India", "Key government institutions", "Election process in India"],
+                                    "responses": [
+                                        "India is a federal parliamentary democratic republic with a President as the head of state and a Prime Minister as the head of government.",
+                                        "Key government institutions include the Parliament, Supreme Court, and the President's residence, Rashtrapati Bhavan.",
+                                        "India follows a multi-phase election process for Lok Sabha (lower house) and state legislative assemblies, ensuring democratic representation at various levels."
+                                    ]
+                                },
+                                {
+                                    "tag": "indiaculture",
+                                    "patterns": ["Diversity in Indian culture", "Traditional Indian art forms", "Festivals celebrated in India"],
+                                    "responses": [
+                                        "India is known for its cultural diversity, with various languages, traditions, customs, and cuisines reflecting regional uniqueness.",
+                                        "Traditional Indian art forms include Bharatanatyam and Kathak dance, Carnatic and Hindustani classical music, and intricate forms of painting and sculpture.",
+                                        "India celebrates numerous festivals such as Diwali, Holi, Eid, Durga Puja, and many more, each with its own cultural significance and rituals."
+                                    ]
+                                },
+                                {
+                                    "tag": "indiageography",
+                                    "patterns": ["Geographical features of India", "Major rivers and mountains", "Climate diversity in India"],
+                                    "responses": [
+                                        "India is geographically diverse, featuring the Himalayan mountain range to the north and the Deccan Plateau in the south.",
+                                        "Major rivers include the Ganges, Yamuna, Brahmaputra, and the Indus. The Thar Desert is in the northwest, and the Sundarbans delta is in the east.",
+                                        "India experiences diverse climates, from the tropical climate in the south to the alpine climate in the Himalayan region, offering a wide range of ecosystems and landscapes."
+                                    ]
+                                },
+                                {
+                                    "tag": "indianeconomy",
+                                    "patterns": ["Economic sectors in India", "Major industries", "Recent economic developments"],
+                                    "responses": [
+                                        "India's economy is diversified into primary, secondary, and tertiary sectors, with agriculture, manufacturing, and services playing crucial roles.",
+                                        "Major industries include information technology, pharmaceuticals, textiles, and automotive manufacturing.",
+                                        "Recent economic developments include initiatives such as 'Make in India,' digital transformation, and infrastructure development projects aimed at fostering economic growth."
+                                    ]
+                                },
+                                {
+                                    "tag": "indiareligion",
+                                    "patterns": ["Major religions in India", "Sacred sites", "Religious festivals"],
+                                    "responses": [
+                                        "India is known for its religious diversity, with major religions including Hinduism, Islam, Christianity, Sikhism, Buddhism, and Jainism.",
+                                        "Sacred sites include the Varanasi Ghats, Golden Temple in Amritsar, Ajanta and Ellora Caves, and the holy city of Mecca for Muslims.",
+                                        "Religious festivals like Diwali, Eid, Christmas, and Vaisakhi are celebrated with great fervor, bringing communities together in joyous celebrations."
+                                    ]
+                                },
+                                {
+                                    "tag": "indiascience",
+                                    "patterns": ["Contributions to science from India", "Space exploration achievements", "Prominent Indian scientists"],
+                                    "responses": [
+                                        "India has made significant contributions to science, including the concept of zero, Ayurveda, and pioneering work in mathematics by scholars like Aryabhata and Brahmagupta.",
+                                        "India's space agency, ISRO, has achieved milestones such as the Mars Orbiter Mission (Mangalyaan) and the Chandrayaan missions to the moon.",
+                                        "Prominent Indian scientists include C.V. Raman, Homi J. Bhabha, and A.P.J. Abdul Kalam, who made notable contributions to physics and space science."
+                                    ]
+                                },
+                                {
+                                    "tag": "indialiterature",
+                                    "patterns": ["Classic Indian literature", "Modern Indian authors", "Nobel laureates in literature from India"],
+                                    "responses": [
+                                        "Classic Indian literature includes epics like the Ramayana and Mahabharata, as well as works by Kalidasa, Rabindranath Tagore, and Premchand.",
+                                        "Modern Indian authors like Arundhati Roy, Salman Rushdie, and Chetan Bhagat have gained international acclaim for their literary works.",
+                                        "Nobel laureates in literature from India include Rabindranath Tagore, the first non-European Nobel laureate in Literature, recognized for his poetic and philosophical writings."
+                                    ]
+                                },
+                                {
+                                    "tag": "programminglanguages",
+                                    "patterns": ["Popular programming languages", "Best language for web development", "Choosing a language for beginners"],
+                                    "responses": [
+                                        "Popular programming languages include Python, JavaScript, Java, C++, and Ruby, each with its strengths and use cases.",
+                                        "For web development, JavaScript is essential for front-end, while back-end languages like Python, Node.js, and PHP are commonly used. Full-stack developers often work with a combination.",
+                                        "Choosing a language for beginners depends on goals. Python is often recommended for its readability and versatility, making it a great starting point."
+                                    ]
+                                },
+                                {
+                                    "tag": "codingpractices",
+                                    "patterns": ["Best coding practices", "Code optimization techniques", "Importance of version control"],
+                                    "responses": [
+                                        "Best coding practices include writing modular and maintainable code, using meaningful variable names, and following style guides like PEP 8 (for Python) or Airbnb's JavaScript style guide.",
+                                        "Code optimization involves improving efficiency without sacrificing correctness. Techniques include algorithmic improvements, using efficient data structures, and minimizing I/O operations.",
+                                        "Version control, using tools like Git, is crucial for tracking changes, collaborating with teams, and easily reverting to previous code states in software development projects."
+                                    ]
+                                },
+                                {
+                                    "tag": "softwaredevelopment",
+                                    "patterns": ["Agile methodology in software development", "Importance of testing", "Continuous integration and deployment (CI/CD)"],
+                                    "responses": [
+                                        "Agile methodology emphasizes iterative development, collaboration, and flexibility in responding to changes. Scrum and Kanban are popular frameworks within Agile.",
+                                        "Testing is essential to ensure software quality. Types of testing include unit testing, integration testing, and end-to-end testing. Automated testing helps catch bugs early in the development process.",
+                                        "Continuous Integration (CI) and Continuous Deployment (CD) involve automating the building, testing, and deployment processes, ensuring rapid and reliable software releases."
+                                    ]
+                                },
+                                {
+                                    "tag": "webdevelopment",
+                                    "patterns": ["Front-end vs. back-end development", "Frameworks for web development", "Importance of responsive design"],
+                                    "responses": [
+                                        "Front-end development involves building user interfaces, typically using HTML, CSS, and JavaScript. Back-end development deals with server-side logic, databases, and APIs.",
+                                        "Frameworks like React, Angular, and Vue.js are popular for front-end development, while Django, Flask, and Express.js are common for back-end development.",
+                                        "Responsive design ensures that web applications adapt to various screen sizes, providing a seamless user experience across devices, including desktops, tablets, and smartphones."
+                                    ]
+                                },
+                                {
+                                    "tag": "machinelearning",
+                                    "patterns": ["Introduction to machine learning", "Popular machine learning libraries", "Applications of artificial intelligence"],
+                                    "responses": [
+                                        "Machine learning is a subset of artificial intelligence (AI) that involves training models to make predictions or decisions based on data patterns.",
+                                        "Popular machine learning libraries include TensorFlow, PyTorch, and scikit-learn. These libraries provide tools for building and training machine learning models.",
+                                        "Artificial intelligence has diverse applications, including image recognition, natural language processing, recommendation systems, and autonomous vehicles."
+                                    ]
+                                },
+                                {
+                                    "tag": "datascience",
+                                    "patterns": ["Key steps in the data science process", "Tools for data analysis", "Importance of data visualization"],
+                                    "responses": [
+                                        "The data science process involves defining the problem, collecting and cleaning data, exploring and analyzing data, building models, and communicating results.",
+                                        "Tools like Python (with libraries such as Pandas and NumPy) and R are commonly used for data analysis. Jupyter Notebooks provide an interactive environment for data exploration.",
+                                        "Data visualization is crucial for conveying insights. Tools like Matplotlib, Seaborn, and Tableau help create meaningful visual representations of data."
+                                    ]
+                                },
+                                {
+                                    "tag": "cybersecurity",
+                                    "patterns": ["Importance of cybersecurity", "Common cybersecurity threats", "Secure coding practices"],
+                                    "responses": [
+                                        "Cybersecurity is vital for protecting digital systems, networks, and data from unauthorized access, attacks, and damage.",
+                                        "Common cybersecurity threats include phishing, malware, ransomware, and DDoS attacks. Staying informed about potential threats is crucial for effective defense.",
+                                        "Secure coding practices involve writing code with security in mind, such as input validation, encryption, and regular security audits to identify and address vulnerabilities."
+                                    ]
+                                },
+                                {
+                                    "tag": "cloudcomputing",
+                                    "patterns": ["Introduction to cloud computing", "Benefits of cloud services", "Popular cloud providers"],
+                                    "responses": [
+                                        "Cloud computing involves delivering computing services (such as storage, processing power, and databases) over the internet, offering scalability and flexibility.",
+                                        "Benefits of cloud services include cost savings, scalability, accessibility, and automatic updates. Businesses can focus on innovation without the burden of managing physical infrastructure.",
+                                        "Popular cloud providers include Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP), each offering a range of services for different business needs."
+                                    ]
+                                },
+                                {
+                                    "tag": "mobileappdevelopment",
+                                    "patterns": ["Native vs. hybrid mobile app development", "Frameworks for mobile app development", "Key considerations in app design"],
+                                    "responses": [
+                                        "Native mobile app development involves creating apps for specific platforms (iOS or Android) using platform-specific languages (Swift or Kotlin/Java). Hybrid development uses web technologies (HTML, CSS, JavaScript) for cross-platform compatibility.",
+                                        "Frameworks like React Native, Flutter, and Xamarin are popular for cross-platform mobile app development, allowing developers to build apps for both iOS and Android with shared code.",
+                                        "Key considerations in app design include user experience (UX), user interface (UI), performance, and adherence to platform-specific design guidelines for a seamless and intuitive app experience."
+                                    ]
+                                },
+                                {
+                                    "tag": "sciencefacts",
+                                    "patterns": ["Interesting science facts", "Fascinating scientific discoveries", "Mind-blowing facts about the universe"],
+                                    "responses": [
+                                        "Did you know that honey never spoils? Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible.",
+                                        "In a year, a person produces enough saliva to fill two bathtubs. Saliva plays a crucial role in digestion and maintaining oral health.",
+                                        "The universe is vast and mysterious. One mind-blowing fact is that there are more possible iterations of a game of chess than there are atoms in the observable universe."
+                                    ]
+                                },
+                                {
+                                    "tag": "historyfacts",
+                                    "patterns": ["Historical facts", "Unusual events in history", "Remarkable achievements in the past"],
+                                    "responses": [
+                                        "During World War II, British intelligence allowed a rumor to spread that their pilots had excellent night vision due to consuming a diet rich in carrots. This was a cover-up for the newly developed radar technology.",
+                                        "In 1962, the U.S. Air Force conducted a study on the feasibility of training cats to guide bombs to targets. The project, named 'Acoustic Kitty,' was abandoned as cats are not easily trainable for such tasks.",
+                                        "The Great Emu War occurred in Australia in 1932 when the government deployed soldiers with machine guns to control an emu population. The emus, however, proved to be elusive and agile, and the military operation was not successful."
+                                    ]
+                                },
+                                {
+                                    "tag": "languagefacts",
+                                    "patterns": ["Language trivia", "Unusual words and their meanings", "Linguistic curiosities"],
+                                    "responses": [
+                                        "The word 'bookkeeper' (and its variants) is the only unhyphenated English word with three consecutive double letters.",
+                                        "The sentence 'The quick brown fox jumps over a lazy dog' is a pangram, meaning it contains every letter of the alphabet at least once. It's often used for typing practice.",
+                                        "The longest word in the English language without a vowel is 'rhythms.'"
+                                    ]
+                                },
+                                {
+                                    "tag": "animalfacts",
+                                    "patterns": ["Fun facts about animals", "Unusual animal behaviors", "Remarkable features of different species"],
+                                    "responses": [
+                                        "A group of flamingos is called a 'flamboyance.'",
+                                        "Penguins mate for life and often propose to each other with pebbles.",
+                                        "The mimic octopus can imitate the appearance and behaviors of various marine animals, such as lionfish and flatfish, to avoid predators."
+                                    ]
+                                },
+                                {
+                                    "tag": "technologyfacts",
+                                    "patterns": ["Tech trivia", "Innovations and breakthroughs", "Curious tech history"],
+                                    "responses": [
+                                        "The first computer programmer was Ada Lovelace, who wrote the first algorithm intended for implementation on Charles Babbage's Analytical Engine in the 1840s.",
+                                        "The Apollo 11 guidance computer, which facilitated the first moon landing, had less processing power than a modern-day calculator.",
+                                        "The world's first webcam was created at the University of Cambridge to monitor a coffee pot. It allowed researchers to see the coffee level and avoid wasted trips to an empty pot."
+                                    ]
+                                },
+                                {
+                                    "tag": "geographyfacts",
+                                    "patterns": ["Geographical oddities", "Unusual landscapes", "Geography trivia"],
+                                    "responses": [
+                                        "Canada has the longest coastline of any country in the world.",
+                                        "Lake Baikal in Siberia is the deepest freshwater lake globally, reaching depths of over 5,387 feet (1,642 meters).",
+                                        "The Dead Sea is so salty that people can easily float on its surface. It has one of the highest salt concentrations of any body of water."
+                                    ]
+                                },
+                                {
+                                    "tag": "foodfacts",
+                                    "patterns": ["Interesting food trivia", "Unusual culinary practices", "Fascinating food history"],
+                                    "responses": [
+                                        "Honey never spoils. Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible.",
+                                        "The world's most expensive coffee, Kopi Luwak, is made using beans eaten and excreted by civet cats.",
+                                        "The popsicle was invented by an 11-year-old boy named Frank Epperson in 1905. He left a glass of soda with a stirring stick in it on his porch overnight, and it froze. He called it the 'Epsicle.'"
+                                    ]
+                                },
+                                {
+                                    "tag": "spacefacts",
+                                    "patterns": ["Fascinating space trivia", "Astronomical wonders", "Unusual celestial phenomena"],
+                                    "responses": [
+                                        "The Great Red Spot on Jupiter is a massive storm that has been raging for at least 350 years.",
+                                        "Venus rotates on its axis so slowly that a day on Venus (one complete rotation) is longer than a year on Venus (one orbit around the sun).",
+                                        "There is a planet named HD 189733b where it rains glass sideways in its extreme winds."
+                                    ]
+                                },
+                                {
+                                    "tag": "sportsfacts",
+                                    "patterns": ["Sports trivia", "Unusual sports records", "Remarkable moments in sports history"],
+                                    "responses": [
+                                        "The record for the longest tennis match lasted for 11 hours and 5 minutes, played at Wimbledon in 2010 between John Isner and Nicolas Mahut.",
+                                        "In 1900, golf was featured in the Summer Olympics in Paris, and the United States and Canada were the only participating countries. It remains the only Olympic golf event in history.",
+                                        "The first recorded game of baseball was played in 1846 in Hoboken, New Jersey. The New York Nine defeated the Knickerbockers 23-1."
+                                    ]
+                                }
+        
+        ]
+    }             
