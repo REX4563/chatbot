@@ -50,7 +50,7 @@ const getChatResponse = async (incomingChatDiv) => {
     const responseData = await response.json();
 
     if (response.ok) {
-        pElement.textContent = responseData.response.trim():'';
+        pElement.textContent = responseData.response.trim();
     } else {
         pElement.classList.add("error");
         pElement.textContent = "Oops! Something went wrong while retrieving the response. Please try again.";
