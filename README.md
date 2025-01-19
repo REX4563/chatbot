@@ -1,2 +1,2 @@
 # Nimblebot
- A simle AI chatbot
+ A simle chatbot
